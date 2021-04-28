@@ -15,11 +15,11 @@ function Row({title, fetchUrl, isLargeRow = false }) {
     }
     fetchData();
   }, [fetchUrl]);
-  console.log(movies)
+
 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h2 className="rowTitle">{title}</h2>
 
 <div className="rowPosters">
         {movies.map(

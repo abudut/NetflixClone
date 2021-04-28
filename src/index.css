@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Netflix';
-  src: local('Netflix'), url(./fonts/netflix-sans-cufonfonts/NetflixSansBlack.ttf) format('truetype');
+  src: local('Netflix'), url(./fonts/netflix-sans-cufonfonts/NetflixSansRegular.ttf) format('truetype');
 }
 
 *{
@@ -8,9 +8,10 @@
 }
 body {
   margin: 0;
-  font-family: 'Netflix',sans-serif;
+  font-family: Netflix,'Helvetica Neue','Arial', 'Sans Serif' ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #e5e5e5;
 }
 
 code {

@@ -1,15 +1,16 @@
 .nav {
     position: fixed;
     top: 0;
-    padding: 20px;
-    width: 100%;
+    padding: 21px 51px 21px 51px;
+   width: 100%;
     height: 30px;
     z-index: 1;
+    display: flex;
+    align-items: center;
 
     /*Animations*/
     transition-timing-function: ease-in;
     transition: all 0.5s;
-
 }
 
 .navBlack {
@@ -18,27 +19,66 @@
 
 .navContents {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 94%;
+  
+}
+
+.navRight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navLogo {
-
-    position: fixed;
-    top: 10px;
-    left: 0px;
-    width: 80px;
-    padding-left: 20px;
     object-fit: contain;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.navLogo>img{
+    width: 115px;
+
     cursor: pointer;
 }
 
-.navAvatar {
+.navMenu{
+    display: flex;
+
+    justify-content: space-around;
+ 
+}
+.navMenu> li{
+    margin-right: 15px;
+    list-style-type: none;
     cursor: pointer;
-    position: fixed;
-    right: 20px;
+}
+
+a:hover{
+    color: #b3b3b3;
+    transition: all 01s;
+}
+
+li.active{
+
+    font-weight: 700;
+    pointer-events: none;
+    color: #ffffff;
+
+}
+
+.navAvatar>img{
     width: 30px;
     height: 30px;
-    top: 10px;
-
-
+    cursor: pointer;
+    border-radius: 3px;
 }
