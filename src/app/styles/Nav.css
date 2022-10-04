@@ -2,16 +2,20 @@
     position: fixed;
     top: 0;
     padding: 21px 51px 21px 51px;
-   width: 100%;
+    width: 100%;
     height: 30px;
     z-index: 1;
     display: flex;
     align-items: center;
+    background-color:rgba(0, 0, 0, 0.1);
+  
 
     /*Animations*/
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
+
+
 
 .navBlack {
     background-color: #000000;
@@ -22,10 +26,10 @@
     align-items: center;
     justify-content: space-between;
     width: 94%;
-  
+
 }
 
-.navRight{
+.navRight {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,7 +39,7 @@
     object-fit: contain;
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
@@ -45,30 +49,31 @@ a{
 
 }
 
-.navLogo>img{
+.navLogo>img {
     width: 115px;
 
     cursor: pointer;
 }
 
-.navMenu{
+.navMenu {
     display: flex;
 
     justify-content: space-around;
- 
+
 }
-.navMenu> li{
+
+.navMenu>li {
     margin-right: 15px;
     list-style-type: none;
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: #b3b3b3;
     transition: all 01s;
 }
 
-li.active{
+li.active {
 
     font-weight: 700;
     pointer-events: none;
@@ -76,7 +81,7 @@ li.active{
 
 }
 
-.navAvatar>img{
+.navAvatar>img {
     width: 30px;
     height: 30px;
     cursor: pointer;

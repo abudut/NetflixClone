@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+}
+
+.login {
+    position: relative;
+    height: 100%;
+}
+
+
+.loginBackground {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    background-size: 100%;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/45082c39-e6d5-4b02-8867-e38fe32ed3af/a6c4657a-a0fc-4d34-9a73-b958f07e0ed7/GB-en-20220919-popsignuptwoweeks-perspective_alpha_website_medium.jpg') center no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 5%;
+}
+
+.r {
+    width: 200px;
+}
+
+
+.loginLogo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+
+.loginButton {
+    padding: 7px 17px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e50914;
+    font-weight: 400;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.loginGradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0.8)100%);
+}
+
+.loginContent {
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.loginContent>h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.loginContent>h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginContent>h3 {
+    font: size 1.3rem;
+    font-weight: 400;
+}
+
+.loginInput {
+
+    margin-top: 2%;
+
+}
+
+.loginInput>form {
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.loginInput>form>input {
+    padding-left: 10px;
+    padding-right: 10px;
+    outline-width: 0;
+    height: 40px;
+    width: 99%;
+    border: none;
+    max-width: 450px;
+    margin-bottom: 4%;
+}
+
+
+
+
+.getStarted {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    width: 90%;
+    max-width: 130px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+@media screen and (min-width: 731px) {
+    .loginInput>form {
+        display: flex;
+    }
+
+    .getStarted {
+        height: 62px;
+        margin-bottom: 0;
+        font-size: 30px;
+        max-width: 230px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .loginInput>form>input {
+        height: 60px;
+    }
+
+    .loginContent>h1 {
+        font-size: 4rem;
+    }
+
+    .loginContent>h2 {
+        font-size: 1.8rem;
+    }
+
+
+}
