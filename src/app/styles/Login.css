@@ -13,15 +13,15 @@
     height: 100%;
     object-fit: cover;
     background-size: 100%;
-    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/45082c39-e6d5-4b02-8867-e38fe32ed3af/a6c4657a-a0fc-4d34-9a73-b958f07e0ed7/GB-en-20220919-popsignuptwoweeks-perspective_alpha_website_medium.jpg') center no-repeat;
+   
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 5%;
 }
 
@@ -31,7 +31,7 @@
 
 
 .loginLogo {
-    max-width: 100%;
+    width: 145px;
     height: auto;
     object-fit: contain;
 

@@ -7,13 +7,16 @@ function Login() {
 
   return (
     <div className="login">
-      <div className="loginBackground">
+      <div  style={{
+          backgroundImage: `url('/logbkg.jpg')`,
+          
+        }} className="loginBackground">
         <div className="loginGradient">
           <div className="header">
             <div className="r">
               <img
                 className="loginLogo"
-                src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+                src="/logo.png"
                 alt=""
               />
             </div>

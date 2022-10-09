@@ -4,7 +4,11 @@ import "../app/styles/Nav.css";
 
 function Nav() {
   const [show, handleShow] = useState(false);
-  const history= useHistory()
+  const history = useHistory();
+  const [isActive, setActive] = useState(false);
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
 
   const transtitonNavBar = () => {
     if (window.scrollY > 100) {
@@ -23,14 +27,18 @@ function Nav() {
       <div className="navContents">
         <div className="navRight">
           <div className="navLogo">
-            <img
-             onClick={()=>history.push('/')}
-              src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-              alt=""
-            />
+            <img onClick={() => history.push("/")} src="/logo.png" alt="" />
           </div>
-          <ul className="navMenu" id="ac">
-            <li className="active"  onClick={()=>history.push('/')}>Inicio</li>
+          <ul className="navMenu">
+            <li
+              className={isActive ? "active" : null}
+              onClick={() => {
+                history.push("/");
+                toggleClass();
+              }}
+            >
+              Inicio
+            </li>
             <li>
               <a>Series Tv</a>
             </li>
@@ -40,7 +48,7 @@ function Nav() {
             <li>
               <a href="#Novedades mas vistas">Novedades mas vistas</a>
             </li>
-            <li onClick={()=>history.push('/myList')}>
+            <li onClick={() => history.push("/myList")}>
               <a>Mi Lista</a>
             </li>
           </ul>
@@ -48,7 +56,7 @@ function Nav() {
 
         <div className="navAvatar">
           <img
-          onClick={()=>history.push('/profile')}
+            onClick={() => history.push("/profile")}
             src="https://i.pinimg.com/originals/0d/dc/ca/0ddccae723d85a703b798a5e682c23c1.png"
             alt=""
           />

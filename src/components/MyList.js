@@ -7,7 +7,7 @@ function MyList() {
 
         <div className='mylist'>
               <Nav/>
-              <h2 className="rowTitle">Mi Lista</h2>
+             
         
         </div>
     )
