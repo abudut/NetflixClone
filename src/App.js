@@ -7,7 +7,7 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import Profile from "./components/Profile";
-import MyList from "./components/MyList";
+
 
 
 function App() {
@@ -40,9 +40,6 @@ function App() {
           <Switch>
                 <Route exact path="/profile">
               <Profile />
-            </Route>
-            <Route exact path="/myList">
-              <MyList />
             </Route>
             <Route exact path="/">
               <HomeScreen />

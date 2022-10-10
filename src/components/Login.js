@@ -13,7 +13,7 @@ function Login() {
         }} className="loginBackground">
         <div className="loginGradient">
           <div className="header">
-            <div className="r">
+            <div>
               <img
                 className="loginLogo"
                 src="/logo.png"

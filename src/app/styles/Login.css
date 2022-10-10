@@ -25,27 +25,24 @@
     margin-bottom: 5%;
 }
 
-.r {
-    width: 200px;
-}
+
 
 
 .loginLogo {
-    width: 145px;
+    width: 120px;
     height: auto;
     object-fit: contain;
-
 }
 
 
 .loginButton {
-    padding: 7px 17px;
+    padding: 7px 10px;
     font-size: 1rem;
     color: #ffffff;
     background-color: #e50914;
     font-weight: 400;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -132,6 +129,15 @@
         display: flex;
     }
 
+    .loginButton {
+        padding: 7px 17px;
+    }
+    
+
+    .loginLogo {
+        width: 200px;
+    }
+
     .getStarted {
         height: 62px;
         margin-bottom: 0;
@@ -152,6 +158,13 @@
     .loginContent>h2 {
         font-size: 1.8rem;
     }
+
+    .header {
+        margin-left: 40px;
+        margin-right: 40px;
+ 
+    }
+    
 
 
 }

@@ -40,7 +40,7 @@ function Nav() {
               Inicio
             </li>
             <li>
-              <a>Series Tv</a>
+              <a href="#Series">Series Tv</a>
             </li>
             <li>
               <a href="#Peliculas">Peliculas</a>
@@ -48,8 +48,8 @@ function Nav() {
             <li>
               <a href="#Novedades mas vistas">Novedades mas vistas</a>
             </li>
-            <li onClick={() => history.push("/myList")}>
-              <a>Mi Lista</a>
+            <li>
+              <a  href="#MiLista">Mi Lista</a>
             </li>
           </ul>
         </div>
